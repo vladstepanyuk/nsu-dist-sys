@@ -1,0 +1,4 @@
+cache-size: 1000
+manager-address: "manager:1488"
+crack-hash-timeout: 6000000
+request-timeout: 1000000

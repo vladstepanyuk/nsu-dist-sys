@@ -1,0 +1,23 @@
+services:
+  manager:
+    container_name: manager
+    image: manager:latest
+    restart: always
+    environment:
+      - PORT=1488
+    ports:
+      - "1488:1488"
+    networks:
+      - crack-hash-network
+  worker:
+    image: worker:latest
+    restart: always
+    deploy:
+      mode: replicated
+      replicas: 4
+    networks:
+      - crack-hash-network
+
+networks:
+  crack-hash-network:
+    driver: bridge
