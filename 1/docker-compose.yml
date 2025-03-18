@@ -4,9 +4,9 @@ services:
     image: manager:latest
     restart: always
     environment:
-      - PORT=1488
+      - PORT=12345
     ports:
-      - "1488:1488"
+      - "12345:12345"
     networks:
       - crack-hash-network
   worker:
@@ -14,7 +14,7 @@ services:
     restart: always
     deploy:
       mode: replicated
-      replicas: 4
+      replicas: 16
     networks:
       - crack-hash-network
 

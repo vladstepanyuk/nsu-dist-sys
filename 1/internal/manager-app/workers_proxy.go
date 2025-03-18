@@ -102,7 +102,7 @@ func NewWorkersProxy(ctx context.Context, cfg *ManagerConfig, wr *WorkersRegistr
 func calculateEndWordIndex(maxWorldLength uint) uint {
 	var res uint = 0
 	for i := range maxWorldLength {
-		res += uint(math.Pow(36, float64(i)))
+		res += uint(math.Pow(36, float64(i+1)))
 	}
 	return res
 }
