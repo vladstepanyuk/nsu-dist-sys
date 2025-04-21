@@ -1,0 +1,7 @@
+cache-size: 1000
+manager-address: "manager:12345"
+crack-hash-timeout: 60000000
+request-timeout: 1000000
+rabbitmq-task-queue: "task_queue"
+rabbitmq-task-exchange: "tasks"
+rabbitmq-result-exchange: "results"

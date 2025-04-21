@@ -1,0 +1,7 @@
+request-timeout: 1000000
+crack-hash-timeout: 300000000
+cache-size: 10000
+max-failure-count: 1000
+rabbitmq-task-exchange: "tasks"
+rabbitmq-result-exchange: "results"
+rabbitmq-result-queue: "res_queue"
